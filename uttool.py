@@ -1,9 +1,9 @@
-""""
+"""
 uttool 
 Youtube download tool
 Rev 0 - march 2021 - leonardochavesduarte@gmail.com
 For more information use the --help option or read ./README.md
-""""
+"""
 
 #utool
 #Standard dependencies
