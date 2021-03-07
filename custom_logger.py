@@ -17,15 +17,35 @@ def setup(name, **kwargs):
     return logger
 
 def dashed_line():
-    print("----------------------------------------") 
+    log = logging.getLogger('main')
+    line = "----------------------------------------"
+    log.debug(line)
 def print_objects(**kwargs):
     log = logging.getLogger('main')
-    if log.level == DEBUG:
-        for k, v in kwargs.items():
-            print(f'{k}:')
-            print(f'{v}')
-            log.debug(f'{k}:')
-            dashed_line(f'{v}')
+    for k, v in kwargs.items():
+        log.debug(f'{k}:')
+        log.debug(f'{v}')
+        dashed_line()
 
         
-
+def print_list(list, **kwargs):
+    log = logging.getLogger('main')
+    bullet = kwargs.get("bullet", True)
+    tab = kwargs.get('tab', True)
+    limit = kwargs.get('limit', -1)
+    name = kwargs.get('name', None)
+    c = 0
+    if name != None:
+        log.debug(f'{name}:')
+    for x in list:
+        out = ''
+        if tab:
+            out += '\t'
+        if bullet:
+            out += '* '
+        out += x
+        log.debug(out)
+        c += 1
+        if c == limit:
+            break
+    dashed_line()
