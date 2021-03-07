@@ -102,7 +102,9 @@ $python reparam.py -r test_param.txt -i RMT_fixedTA.sql -o test_out.sql
 
 ### UTTOOL (Youtube download tool)
 __about:__ Allows users or programs to download youtube videos
+
 __File:__ uttool.py
+
 __Original Repository:__  github.com/LC-Duarte/uttool
 
 #### CLI Usage:
@@ -118,8 +120,7 @@ __Original Repository:__  github.com/LC-Duarte/uttool
     ```
 
 * Multiple video dowload  
-    Create a new
-    yaml config file containg *"out_path"* and *"video_list"* like the example bellow:
+    Create a yaml config file containg *"out_path"* and *"video_list"* like the example bellow:
 
     __NOTE:__ If repetitive links are provided, the script will ignore the second occourence
 
