@@ -1,0 +1,6 @@
+#pytil dependencies
+pytube
+pyyaml
+pyfiglet
+termcolor
+colorama

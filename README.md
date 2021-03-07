@@ -1,4 +1,4 @@
-# pytil
+# PYTIL
 
 ## About
 
@@ -100,13 +100,62 @@ $python reparam.py -r test_param.txt -i RMT_fixedTA.sql -o test_out.sql
 
 * TODO (Functions are available but doc yet to come)
 
+### UTTOOL (Youtube download tool)
+__about:__ Allows users or programs to download youtube videos
+__File:__ uttool.py
+__Original Repository:__  github.com/LC-Duarte/uttool
+
+#### CLI Usage:
+
+* Single video download
+
+    Use the output and the source options like the example bellow
+
+    ```bash
+
+    $python uttool.py -o <path-to-ouput-folder> -s <url-to-video>
+
+    ```
+
+* Multiple video dowload  
+    Create a new
+    yaml config file containg *"out_path"* and *"video_list"* like the example bellow:
+
+    __NOTE:__ If repetitive links are provided, the script will ignore the second occourence
+
+    ```yaml
+
+    #config_uttool.yaml
+
+    out_path: /Users/Leonardo/Google Drive/investimento/curso_mira/video_aulas
+    video_list:
+        - https://www.youtube.com/watch?v=hKY0Z8J1cCU
+        - https://www.youtube.com/watch?v=RZuEG-TtmGA
+        - https://www.youtube.com/watch?v=DggquAatQNA
+        - https://www.youtube.com/watch?v=HFXMxZLW4qA
+
+    ```
+
+    call the script providing the path to that config file
+
+    ```bash
+
+    $python uttool.py -c <config-file-path>
+
+    ```
+
+    Fore more information on usage of *uttol* check its [original repostory](http://github.com/LC-Duarte/uttool) or run the script with the help option (-h or --help)
+
+#### Functions
+
+* TODO (Functions are available but doc yet to come)
 
 ## Author
 Leonardo Chaves Duarte 
 
 leonardochavesduarte@gmail.com
 
-https://github.com/LC-Duarte/
+github.com/LC-Duarte/
 
 Curitiba - Parana - Brazil
 
