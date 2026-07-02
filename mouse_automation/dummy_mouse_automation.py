@@ -74,7 +74,7 @@ def main():
         if i % 2 == 0:
             m =-1
         #Move cursor relative to its curent position
-        pyautogui.moveRel(0, m*50, duration = 1)
+        pyautogui.moveRel(m*50, 0, duration = 1)
         pos= click()
         dateTimeObj = datetime.now()
         out = f"{dateTimeObj} - Dummy cursor automation is in execution - CurrentPos: ({pos.x},{pos.y}), ClickCounter: {CLICK_COUNTER}, Until: {datetime.fromtimestamp(max_time)} "

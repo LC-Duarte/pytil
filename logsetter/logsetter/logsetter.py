@@ -1,7 +1,7 @@
 #logsetter.py
 """
-Project Name: Pytil
-Description: A collection of useful tools and utilities for Python.
+Project Name: logsetter
+Description: Easy python Log setup and standarnization 
 Author: Leonardo Duarte
 Created on: May 28th, 2024
 Version: 0.0.1
@@ -13,7 +13,7 @@ INFO     = logging.INFO
 DEBUG    =  logging.DEBUG
 WARNING  = logging.WARNING
 ERROR    = logging.ERROR
-def setup(name, log_file = None,  log_level=INFO):
+def logsetup(name, log_file = None,  log_level=INFO):
     """
     Set up a logger with the specified name and optional log file and log level.
 
